@@ -1,4 +1,4 @@
-thordata-sdk>=1.6.0
+thordata-sdk>=1.7.0
 python-dotenv
 pandas
 colorama
