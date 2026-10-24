@@ -22,7 +22,7 @@
 - **⭐ Reviews**: Get user reviews, ratings, and dates.
 - **🏬 Seller Info**: Extract seller details and business profiles.
 - **📈 Product Listings**: Get product listings by keyword and domain.
-- **🛡️ Anti-Bot Bypass**: Automatically handles CAPTCHAs, IP rotation, and headers.
+- **Managed Requests:** Uses Thordata's Web Scraper API for request handling and proxy management.
 - **批量支持**: 大多数爬虫都支持批量模式，可一次性提交多个任务。
 
 ## 🚀 Quick Start
@@ -107,6 +107,44 @@ This scraper uses **Thordata's Web Scraper API (Hybrid Mode)**:
 This architecture ensures you **never get blocked** and receive clean, structured data.
 
 ---
+
+## What This Example Does Not Collect
+
+This repository is an example client for authorized Thordata Web Scraper API requests. It does not include Amazon credentials, cookies, browser sessions, or source-site access controls.
+
+The script writes API responses to local files under `output/`. Review generated files before sharing them, and never commit credentials, tokens, cookies, or private data.
+
+Access to this code does not grant rights to collect, reuse, train on, or redistribute third-party data. Use the example only for lawful and authorized workflows.
+
+## Failure Behavior
+
+When the scraper service returns an error response, the script writes the error payload to:
+
+```text
+output/error_<operation>_<timestamp>.json
+```
+
+Successful responses are written to:
+
+```text
+output/<operation>.json
+```
+
+Invalid credentials, unsupported parameters, rate limits, or endpoint-specific failures may result in an API error. The exact response depends on the account, endpoint, and request parameters.
+
+## For Coding Assistants
+
+When modifying or running this example:
+
+- Read `.env.example` and keep all credentials in environment variables.
+- Never place API keys or private data in source files, logs, README files, or commits.
+- Check `src/config.py` before inventing spider IDs or request parameters.
+- Use the existing CLI, for example:
+  ```bash
+  python main.py product asin B0BZYCJK89
+  ```
+- Review files under `output/` before sharing or committing them.
+- Treat returned product, review, seller, and listing data as third-party data subject to applicable terms and usage restrictions.
 
 ## 📄 License
 
