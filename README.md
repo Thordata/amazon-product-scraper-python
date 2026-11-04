@@ -9,7 +9,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Powered By](https://img.shields.io/badge/Powered%20By-Thordata-orange)](https://dashboard.thordata.com/?utm_source=github&utm_medium=readme&utm_campaign=amazon_scraper)
+[![Powered By](https://img.shields.io/badge/Powered%20By-Thordata-orange)](https://www.thordata.com/products/web-scraper?op=flora&from=github)
 
 </div>
 
@@ -29,7 +29,7 @@
 
 ### 1. Get Credentials
 
-Get your **free** scraping token from the [Thordata Dashboard](https://dashboard.thordata.com/?utm_source=github&utm_medium=readme&utm_campaign=amazon_scraper).
+Get your **free** scraping token from the [Thordata Dashboard](https://www.thordata.com/products/web-scraper?op=flora&from=github).
 
 ### 2. Install
 
